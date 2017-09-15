@@ -117,3 +117,124 @@ All my work is voluntary and nonprofit, however you can support my work by makin
 ## Special thanks
 - Thanks to Team molecule for HENkaku and thanks to [yifanlu](https://twitter.com/yifanlu) for taiHEN
 - Thanks to [Mathieulh](https://twitter.com/Mathieulh) for beta testing and helping me writing this readme
+
+Italian translate
+Plugin NoNpDrm di TheFloW
+
+Caratteristiche
+
+Esporta le chiavi di licenza dei contenuti PS Vita come le false licenze.
+Bypasserà la scadenza di PlayStation Plus e di altre licenze temporanee.
+Consente di eseguire versioni di prova come versioni complete.
+Consente la condivisione di contenuti crittografati PFS (giochi non decodificati non modificati) su più account e dispositivi PS Vita utilizzando file di licenza generati generati.
+I giochi importati si comportano come giochi acquistati e consentono l'utilizzo di aggiornamenti di gioco senza alcun problema scaricati dalla Sony Interactive Entertainment Network (PlayStation Network) a condizione che questi aggiornamenti siano eseguiti su firmware 3.60 e inferiore.
+I giochi possono anche essere spogliati della loro crittografia PFS utilizzando strumenti come la vitamina, proprio come qualsiasi altro gioco acquistato.
+Utilizzo di applicazioni acquistate su dispositivi disattivati.
+In poche parole, questo plugin ti permette di ignorare la protezione DRM su qualsiasi contenuto PS Vita.
+
+Questo software NON
+
+Consenti modifiche ai tuoi giochi / applicazioni.
+Lavorare con i contenuti decodificati PFS (come i giochi scaricati utilizzando applicazioni come Vitamina o MaiDumpTool).
+Consente l'esecuzione di applicazioni / utilizzo di contenuti senza una licenza valida o un file di licenza falso.
+Lavorare con i titoli PlayStation Portable o PlayStation 1 (se volete giocare a tali titoli, potresti guardare il software Adrenaline ).
+Lavorare con applicazioni che eseguono solo il firmware 3.61 o successivo.
+Disclaimer legale
+
+La rimozione e la distribuzione di contenuti DRM e / o l'elusione di meccanismi di protezione della copia per qualsiasi altro scopo che l'archiviazione / la conservazione dei giochi che possiedono licenze è illegale.
+Questo software è destinato ad essere strettamente riservato per il tuo uso personale PERSONAL .
+L'autore non si assume alcuna responsabilità per le tue azioni utilizzando questo software.
+Requisiti software
+
+Questo software funzionerà solo su PlayStation Vita, PlayStation Vita TV, dispositivi PlayStation TV in esecuzione su firmware 3.60, il framework taiHEN e HENkaku devono essere in esecuzione sul tuo dispositivo, per ulteriori informazioni si prega di collegarsi a https://henkaku.xyz/
+Per tutti le possibilità descritte di seguito, è necessario utilizzare VitaShell v1.6 o superiore per trasferimenti più veloci. 
+VitaShell ti permette di montare la scheda di memoria o la scheda di gioco di PS Vita sul tuo PC tramite USB. 
+Su un dispositivo TV PS, è possibile montare un'unità flash USB e copiare i file su uma0:.
+
+Installazione
+
+Scaricare l'ultima nonpdrm.skprx , copiarla ux0:taie modificare il ux0:tai/config.txtfile per aggiungere il percorso al modulo *KERNELcome segue
+
+*KERNEL
+ux0:tai/nonpdrm.skprx
+Se sai cosa stai facendo, puoi cambiare questo percorso in una posizione arbitraria finché corrisponda alla posizione esatta del modulo. Puoi anche modificare l' ur0:tai/config.txtopzione supponendo di non avere un file config.txt all'interno della ux0:tai/cartella
+
+Creazione della licenza falsa
+
+Per generare un file di licenza falso contenente la chiave rif rif. Dell'applicazione, è necessario innanzitutto avviare l'applicazione con il plug-in NoNpDrm abilitato. 
+Le licenze false per le applicazioni saranno quindi memorizzate in
+
+ux0:nonpdrm/license/app/TITLE_ID/6488b73b912a753a492e2714e9b38bc7.rif
+ux0:nonpdrm/license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif (per ulteriori contenuti)
+Condivisione di applicazioni digitali
+
+Se si desidera utilizzare l'applicazione sullo stesso dispositivo, ma su un altro account, è sufficiente copiare la licenza falsa 6488b73b912a753a492e2714e9b38bc7.rifa ux0:license/app/TITLE_ID/6488b73b912a753a492e2714e9b38bc7.rif.
+Se si desidera utilizzare l'applicazione su un dispositivo diverso, trasferire il contenuto ux0:app/TITLE_IDsul PC e copiare il ux0:nonpdrm/license/app/TITLE_ID/6488b73b912a753a492e2714e9b38bc7.riffile di licenza falso in quanto TITLE_ID/sce_sys/package/work.bin è necessario sovrascrivere l'originale work.bin
+Nota : sui giochi ottenuti tramite PlayStation Store, work.binè legato all'account Sony Interactive Entertainment (noto anche come PlayStation Network) e contiene il tuo ID account. La licenza falsa tuttavia NON contiene informazioni personali.
+
+Condivisione di carte di gioco
+
+Trasferire la gro0:app/TITLE_IDcartella e il suo contenuto su ux0:app/TITLE_IDo sul computer e salvare la licenza falsa ux0:nonpdrm/license/app/TITLE_ID/6488b73b912a753a492e2714e9b38bc7.rifcome TITLE_ID/sce_sys/package/work.bin.
+
+Per trasferimenti più veloci è possibile montare la Game Card su USB. A tale scopo, aprire VitaShell (vedere la sezione Requisiti software di questa documentazione), premere il pulsante START della PS Vita nel Main settingsmenu, selezionare Game Cardaccanto USB deviceall'opzione e premere di nuovo START per chiudere la scheda impostazioni. 
+Ora collegare il tuo PS Vita al computer tramite USB e premere il pulsante SELECT.
+
+Nota : il montaggio delle schede di gioco tramite USB non funziona su dispositivi PlayStation TV o PlayStation Vita TV.
+
+Condivisione di contenuti aggiuntivi
+
+Si può condividere qualsiasi contenuto addizionale su più dispositivi da ux0:addcont/TITLE_ID/DLC_FOLDERo, a giochi di carte selezionati, dalla grw0:addcont/TITLE_ID/DLC_FOLDER
+A tale scopo, copiare la licenza falso ux0:nonpdrm/license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rifa ux0:license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif.
+
+Condivisione di aggiornamenti di giochi
+
+Mentre si può semplicemente copiare il contenuto ux0:patch/TITLE_IDo grw0:patch/TITLE_ID(in caso di titoli di carte selezionati), gli aggiornamenti di gioco possono essere scaricati e installati direttamente dalla PlayStation Network (a meno che l'aggiornamento più recente non sia compatibile con 3.60).
+
+Installazione di applicazioni condivise
+
+L'applicazione digitale e le carte di gioco devono essere memorizzate nel seguente luogo: ux0:app/TITLE_ID
+I contenuti aggiuntivi devono essere memorizzati nella posizione seguente: ux0:addcont/TITLE_ID/DLC_FOLDERle relative licenze devono essere copiate ux0:license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif.
+Gli aggiornamenti di gioco devono essere conservati al seguente indirizzo: ux0:patch/TITLE_ID.
+Aprire VitaShell (versione 1.6 o successiva) e premere △ nella homesezione di VitaShell e scegliere Refresh livearea. 
+Questo innescherà l'installazione se i file sono stati inseriti correttamente e le licenze all'interno dei work.binfile sono valide.
+
+Panoramica
+
+Se si decide di memorizzare il contenuto del gioco sul computer, si consiglia di utilizzare la stessa struttura ux0:come illustrato di seguito:
+
+├───addcont
+│   └───TITLE_ID
+│   │   └───DLC_FOLDER
+├───app
+│   └───TITLE_ID
+│   │   └───sce_sys
+│   │       └───package
+│   │           └───work.bin (copied or overwritten from ux0:nonpdrm/license/app/TITLE_ID/6488b73b912a753a492e2714e9b38bc7.rif)
+├───license
+│   └───addcont
+│   │   └───TITLE_ID
+│   │       └───DLC_FOLDER
+│   │           └───6488b73b912a753a492e2714e9b38bc7.rif (copied from ux0:nonpdrm/license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif)
+├───patch
+│   └───TITLE_ID
+Codice sorgente
+
+Il codice sorgente si trova all'interno della srcdirectory ed è sotto licenza GPLv3.
+
+Risoluzione dei problemi
+
+"Ottengo un C1-2758-2errore quando si tenta di eseguire un gioco / applicazione" - Il tuo gioco non è stato copiato correttamente e almeno uno dei file è danneggiato, si prega di ripeterlo e riprovare.
+" C1-6703-6Ottengo un errore quando si tenta di eseguire un gioco / applicazione" - Esegui NoNpDrm da un Devkit / Testkit (PDEL / PTEL) questi dispositivi non sono attualmente supportati.
+"Ottengo un C0-9250-6errore quando si tenta di eseguire un gioco / applicazione" - Il nonpdrm.skprxmodulo non viene caricato, assicurarsi che il percorso al modulo sia scritto ur0:tai/config.txto ux0:tai/config.txtse esiste più avanti sul dispositivo.
+"Ottengo un NP-6182-7errore quando si tenta di eseguire un gioco / applicazione" - Questo errore si è verificato solo una volta durante il nostro test durante il tentativo di eseguire un'applicazione temporanea di PlayStation Plus scaduta, tentando di eseguire il gioco ancora una volta risolto il problema, non siamo mai riusciti a riprodurre questo errore, se riesci a riprodurre in modo coerente questo problema, apri un problema su github.
+"Il mio gioco / applicazione viene visualizzato come versione di prova nella livearea". Ciò accade perché hai copiato un gioco / un'applicazione con una modalità di prova senza o con un invalid / corrotto work.bin.
+"In qualche modo ho messo l'installazione, come posso reinstallare un gioco?" - È possibile eliminare la licenza (falsa) ux0:license/app/TITLE_IDe utilizzare l'opzione di aggiornamento in VitaShell.
+Donazione
+
+Tutto il mio lavoro è volontario e non profit, tuttavia puoi sostenere il mio lavoro facendo una piccola donazione - non importa quanto piccola, sarei molto grato! Basta prestare attenzione a quello che mi scrivi nel messaggio;) 
+Donation Link
+
+Ringraziamenti speciali
+
+Grazie alla molecola di squadra per HENkaku e grazie a yifanlu per taiHEN
+Grazie a Mathieulh per il test beta e mi ha aiutato a scrivere questo readme
