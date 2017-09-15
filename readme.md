@@ -119,6 +119,7 @@ All my work is voluntary and nonprofit, however you can support my work by makin
 - Thanks to [Mathieulh](https://twitter.com/Mathieulh) for beta testing and helping me writing this readme
 
 <h1>TRADUZIONE IN ITALIANO</h1>
+----------------------------------------------------------------------
 
 <h1>Plugin NoNpDrm di TheFloW</h1>
 <h2><a id="user-content-features" class="anchor" href="https://github.com/theheroGAC/NoNpDrm/blob/patch-1/readme.md#features" aria-hidden="true"></a>Caratteristiche</h2>
@@ -204,7 +205,7 @@ Se si decide di memorizzare il contenuto del gioco sul computer, si consiglia di
 │   └───addcont
 │   │   └───TITLE_ID
 │   │       └───DLC_FOLDER
-│   │           └───6488b73b912a753a492e2714e9b38bc7.rif (copied from ux0:nonpdrm/license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif)
+│   │           └───6488b73b912a753a492e2714e9b38bc7.rif (copiato da ux0:nonpdrm/license/addcont/TITLE_ID/DLC_FOLDER/6488b73b912a753a492e2714e9b38bc7.rif)
 ├───patch
 │   └───TITLE_ID
 </code></pre>
@@ -216,8 +217,8 @@ Il codice sorgente si trova all'interno della directory <code>src</code> ed è 
  	<li>" <code>C1-6703-6</code>Ottengo un errore quando si tenta di eseguire un gioco / applicazione" - Esegui NoNpDrm da un Devkit / Testkit (PDEL / PTEL) questi dispositivi non sono attualmente supportati.</li>
  	<li>"Ottengo un errore <code>C0-9250-6</code>quando si tenta di eseguire un gioco / applicazione" - Il modulo <code>nonpdrm.skprx</code> non viene caricato, assicurarsi che il percorso al modulo sia scritto <code>ur0:tai/config.txt</code>o <code>ux0:tai/config.txt</code>se esiste più avanti sul dispositivo.</li>
  	<li>"Ottengo un errore <code>NP-6182-7</code> quando si tenta di eseguire un gioco / applicazione" - Questo errore si è verificato solo una volta durante il nostro test durante il tentativo di eseguire un'applicazione temporanea di PlayStation Plus scaduta, tentando di eseguire il gioco ancora una volta risolto il problema, non siamo mai riusciti a riprodurre questo errore, se riesci a riprodurre in modo coerente questo problema, apri un problema su github.</li>
- 	<li>"Il mio gioco / applicazione viene visualizzato come versione di prova nella livearea". Ciò accade perché hai copiato un gioco / un'applicazione con una modalità di prova senza o con un invalid / corrotto <code>work.bin</code>.</li>
- 	<li>"In qualche modo ho messo l'installazione, come posso reinstallare un gioco?" - È possibile eliminare la licenza (falsa) <code>ux0:license/app/TITLE_ID</code>e utilizzare l'opzione di aggiornamento in VitaShell.</li>
+ 	<li>"Il mio gioco / applicazione viene visualizzato come versione di prova nel livearea". Ciò accade perché hai copiato un gioco / un'applicazione con una modalità di prova senza o con un invalid / corrotto <code>work.bin</code>.</li>
+ 	<li>"In qualche modo ho fermato l'installazione, come posso reinstallare un gioco?" - È possibile eliminare la licenza (falsa) <code>ux0:license/app/TITLE_ID</code>e utilizzare l'opzione di aggiornamento in VitaShell.</li>
 </ul>
 <h2><a id="user-content-donation" class="anchor" href="https://github.com/theheroGAC/NoNpDrm/blob/patch-1/readme.md#donation" aria-hidden="true"></a>Donazione</h2>
 Tutto il mio lavoro è volontario e non profit, tuttavia puoi sostenere il mio lavoro facendo una piccola donazione - non importa quanto piccola, sarei molto grato! Basta prestare attenzione a quello che mi scrivi nel messaggio;)
